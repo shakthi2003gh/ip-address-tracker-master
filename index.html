@@ -23,41 +23,36 @@
 </head>
 
 <body>
-  <h1>IP Address Tracker</h1>
-
-  <div class="search-group">
-    <input type="text" placeholder="Search for any IP address or domain">
-
-    <span class="search-btn" onclick="search()">
-      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
-        <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
-      </svg>
-    </span>
-  </div>
-
-  <div class="details">
-    <div class="ip-address">
-      <span>IP Address</span>
-      <output>192.212.174.101</output>
+  <main>
+    <h1>IP Address Tracker</h1>
+    <div class="search-group">
+      <input type="text" placeholder="Search for any IP address or domain">
+      <span class="search-btn" onclick="search()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+          <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+        </svg>
+      </span>
     </div>
-
-    <div class="location">
-      <span>Location</span>
-      <output>Brooklyn, NY 10001</output>
+    <div class="details">
+      <div class="ip-address">
+        <span>IP Address</span>
+        <output>192.212.174.101</output>
+      </div>
+      <div class="location">
+        <span>Location</span>
+        <output>Brooklyn, NY 10001</output>
+      </div>
+      <div class="timezone">
+        <span>Timezone</span>
+        <output>UTC -05:00</output>
+      </div>
+      <div class="isp">
+        <span>ISP</span>
+        <output>SpaceX Startlink</output>
+      </div>
     </div>
-
-    <div class="timezone">
-      <span>Timezone</span>
-      <output>UTC -05:00</output>
-    </div>
-
-    <div class="isp">
-      <span>ISP</span>
-      <output>SpaceX Startlink</output>
-    </div>
-  </div>
-
-  <div id="map"></div>
+    <div id="map"></div>
+  </main>
 </body>
 
 </html>
