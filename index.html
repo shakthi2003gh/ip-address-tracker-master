@@ -10,21 +10,54 @@
 
   <title>Frontend Mentor | IP Address Tracker</title>
   <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+  <script src="./index.js" defer></script>
 </head>
 
 <body>
+  <h1>IP Address Tracker</h1>
 
-  IP Address Tracker
+  <div class="search-group">
+    <input type="text" placeholder="Search for any IP address or domain">
 
-  Search for any IP address or domain
+    <span class="search-btn" onclick="search()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+        <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+      </svg>
+    </span>
+  </div>
 
-  IP Address
-  Location
-  Timezone
-  UTC
-  <!-- add offset value dynamically using the API -->
-  ISP
+  <div class="details">
+    <div class="ip-address">
+      <span>IP Address</span>
+      <output>192.212.174.101</output>
+    </div>
 
+    <div class="location">
+      <span>Location</span>
+      <output>Brooklyn, NY 10001</output>
+    </div>
+
+    <div class="timezone">
+      <span>Timezone</span>
+      <output>UTC -05:00</output>
+    </div>
+
+    <div class="isp">
+      <span>ISP</span>
+      <output>SpaceX Startlink</output>
+    </div>
+  </div>
+
+  <div id="map"></div>
 </body>
 
 </html>
