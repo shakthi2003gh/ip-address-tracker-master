@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@import url(./normalize.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 375px;
+  min-height: 100vh;
+}
+
+:root {
+  --clr-primary: hsl(0, 0%, 17%);
+  --clr-secondary: hsl(0, 0%, 59%);
+}
+
+body {
+  font: 18px "Rubik", sans-serif;
+}
